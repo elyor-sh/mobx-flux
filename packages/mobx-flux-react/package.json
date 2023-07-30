@@ -1,6 +1,6 @@
 {
   "name": "mobx-flux-react",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "React hooks and provider for binding mobx-flux to react",
   "main": "./dist/index.js",
   "scripts": {
@@ -11,21 +11,28 @@
     "type": "git",
     "url": "git@github.com:elyor-sh/mobx-flux.git"
   },
-  "keywords": ["mobx", "flux", "toolkit", "mobx-flux", "Binding fro mobx-flux", "mobx-flux-react"],
+  "keywords": [
+    "mobx",
+    "flux",
+    "toolkit",
+    "mobx-flux",
+    "Binding fro mobx-flux",
+    "mobx-flux-react"
+  ],
   "author": "Elyor Shodiyorov <elyor.sh.99@mail.ru>",
   "license": "MIT",
   "devDependencies": {
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
     "mobx": "^6.10.0",
+    "mobx-flux": "^1.0.0-beta",
     "mobx-react-lite": "^4.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "ts-loader": "^9.4.4",
     "typescript": "^5.1.6",
     "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "mobx-flux": "^1.0.0-beta",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
     "mobx": "*",

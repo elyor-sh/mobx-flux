@@ -1,6 +1,6 @@
 {
   "name": "mobx-flux",
-  "version": "1.0.0-beta",
+  "version": "1.0.1-beta",
   "description": "Flux architecture for Mobx",
   "main": "./dist/index.js",
   "scripts": {
@@ -11,7 +11,12 @@
     "type": "git",
     "url": "git@github.com:elyor-sh/mobx-flux.git"
   },
-  "keywords": ["mobx", "flux", "toolkit", "mobx-flux"],
+  "keywords": [
+    "mobx",
+    "flux",
+    "toolkit",
+    "mobx-flux"
+  ],
   "author": "Elyor Shodiyorov <elyor.sh.99@mail.ru>",
   "license": "MIT",
   "devDependencies": {
