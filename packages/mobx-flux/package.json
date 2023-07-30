@@ -1,0 +1,27 @@
+{
+  "name": "mobx-flux",
+  "version": "1.0.0-beta",
+  "description": "Flux architecture for Mobx",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "pub": "npx webpack && npm version patch && npm publish"
+  },
+  "keywords": ["mobx", "flux", "toolkit", "mobx-flux"],
+  "author": "Elyor Shodiyorov <elyor.sh.99@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "mobx": "^6.10.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "mobx": "^6.10.0"
+  },
+  "files": [
+    "dist"
+  ]
+}

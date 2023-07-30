@@ -1,0 +1,33 @@
+{
+  "name": "mobx-flux-react",
+  "version": "1.0.0-beta",
+  "description": "React hooks and provider for binding mobx-flux to react",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx webpack",
+    "pub": "npx webpack && npm version patch && npm publish"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "mobx": "^6.10.0",
+    "mobx-react-lite": "^4.0.3",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "mobx": "*",
+    "react": "*"
+  },
+  "dependencies": {
+    "mobx-flux": "^1.0.0-beta",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
