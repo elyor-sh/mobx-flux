@@ -4,9 +4,12 @@
   "description": "Flux architecture for Mobx",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx webpack",
     "pub": "npx webpack && npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elyor-sh/mobx-flux.git"
   },
   "keywords": ["mobx", "flux", "toolkit", "mobx-flux"],
   "author": "Elyor Shodiyorov <elyor.sh.99@mail.ru>",
