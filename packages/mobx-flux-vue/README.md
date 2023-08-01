@@ -1,11 +1,11 @@
-Official React bindings for [mobx-flux](https://www.npmjs.com/package/mobx-flux)
+Official Vue bindings for [mobx-flux](https://www.npmjs.com/package/mobx-flux)
 
 > Note: To work with this package, you need to install this package [mobx-flux](https://www.npmjs.com/package/mobx-flux) 
 
 ## Installation
 
 ```sh
-npm i mobx-flux-react mobx-flux mobx mobx-react-lite
+npm i mobx-flux-vue mobx-flux mobx mobx-vue-lite
 ```
 
 ## Usage

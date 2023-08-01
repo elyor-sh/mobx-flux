@@ -1,0 +1,39 @@
+{
+  "name": "mobx-flux-vue",
+  "version": "1.0.0-beta",
+  "description": "Official bindings for mobx-flux to vue",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "npx webpack",
+    "pub": "npx webpack && npm version patch && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:elyor-sh/mobx-flux.git"
+  },
+  "keywords": [
+    "mobx",
+    "flux",
+    "toolkit",
+    "mobx-flux",
+    "Binding fro mobx-flux",
+    "mobx-flux-react"
+  ],
+  "author": "Elyor Shodiyorov <elyor.sh.99@mail.ru>",
+  "license": "MIT",
+  "devDependencies": {
+    "mobx": "^6.10.0",
+    "mobx-flux": "^1.0.0-beta",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "peerDependencies": {
+    "mobx": "*",
+    "vue": "*"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  }
+}

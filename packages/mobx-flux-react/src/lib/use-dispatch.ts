@@ -7,7 +7,7 @@ export const useDispatch = <Dispatch>(): Dispatch => {
     const store = useContext(MobxToolkitContext as Context<Store<unknown, any>>)
 
     if (!store || !store.dispatch) {
-        throw new Error('useDispatch must be used within a Provider');
+        throw new Error('useDispatch must be used within a CreateStoreProvider');
     }
 
     return store.dispatch as Dispatch;
