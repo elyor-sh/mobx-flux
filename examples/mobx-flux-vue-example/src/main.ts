@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
+import './style.css'
 import App from './App.vue'
 import {createStoreProvider} from "mobx-flux-vue";
 import {store} from "./store";

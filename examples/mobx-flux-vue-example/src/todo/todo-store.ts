@@ -34,7 +34,6 @@ const todoSlice = createSlice({
             state.error = ''
         }),
             builder.addCase(fetchTodoList.fulfilled, (state, action: PayloadAction<ITodo[]>) => {
-                console.log('downloaded ', action.payload)
                 state.loading = false
                 state.todos = action.payload
                 state.error = ''

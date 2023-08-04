@@ -1,0 +1,14 @@
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+#app {
+    max-width: 100%;
+    width: 100%;
+}
