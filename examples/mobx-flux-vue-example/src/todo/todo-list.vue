@@ -21,6 +21,7 @@ const handleDelete = (id: number) => {
 const todos = useAppSelector(state => state.todo)
 
 onMounted(() => {
+  // @ts-ignore
   dispatch(fetchTodoList());
 })
 

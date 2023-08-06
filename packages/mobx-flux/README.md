@@ -1,7 +1,8 @@
 Lightweight, fast package for comfortable work with flux architecture in mobx.
 It's easy to replace the redux-toolkit with this package. There is no extra re-render problem in this package.
 
-[Package for React](https://www.npmjs.com/package/mobx-flux-react).
+[Bindings for React](https://www.npmjs.com/package/mobx-flux-react).
+[Bindings for Vue](https://www.npmjs.com/package/mobx-flux-vue).
 
 [Demo App with React](https://mobx-flux-react-demo.vercel.app/).
 
