@@ -1,6 +1,6 @@
 {
   "name": "mobx-flux-vue",
-  "version": "1.0.4-beta",
+  "version": "1.0.5-beta",
   "description": "Official bindings for mobx-flux to vue",
   "main": "./dist/index.js",
   "scripts": {

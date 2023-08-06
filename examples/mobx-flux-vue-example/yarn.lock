@@ -425,12 +425,10 @@ minimatch@^9.0.0:
   dependencies:
     brace-expansion "^2.0.1"
 
-mobx-flux-vue@^1.0.1-beta:
-  version "1.0.1-beta"
-  resolved "https://registry.yarnpkg.com/mobx-flux-vue/-/mobx-flux-vue-1.0.1-beta.tgz#0f024ba496a8821e8871467f6337f82e11612a0c"
-  integrity sha512-uoQRqNFSpSWqdRvOfrUvK592iS5WJweSSD7/MFDWn/X20D7L4GGvVO9x0v0Y5ZKElhkHLuKdpTbH74I7i+BLnw==
-  dependencies:
-    vue "^3.3.4"
+mobx-flux-vue@^1.0.5-beta:
+  version "1.0.5-beta"
+  resolved "https://registry.yarnpkg.com/mobx-flux-vue/-/mobx-flux-vue-1.0.5-beta.tgz#29de1bbbe3a58b468342972ec3732e54eb80acf0"
+  integrity sha512-BGSV96mo61kJIGMGN/97w8snykdasZ5/vc+HyW0UJdMlOlrz1k1FwmcRj41WtvxbDw7agdtNwyxFsV78HgYQ5Q==
 
 mobx-flux@^1.0.3-beta:
   version "1.0.3-beta"

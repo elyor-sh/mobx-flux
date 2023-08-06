@@ -14,7 +14,7 @@ module.exports = {
         extensions: ['.ts', '.tsx']
     },
     externals: {
-        react: 'react',
+        vue: 'vue',
         mobx: 'mobx'
     },
     module: {

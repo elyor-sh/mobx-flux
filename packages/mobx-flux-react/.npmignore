@@ -1,0 +1,8 @@
+src
+prettierrc.json
+README.md
+tsconfig.json
+webpack.config.js
+yarn.lock
+.idea
+.vscode
