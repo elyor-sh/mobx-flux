@@ -1,1 +1,1 @@
-React todo app as example of using <b>mobx-flux</b> and <b>mobx-flux-react</b>
+Official demo for React bindings of [mobx-flux](https://www.npmjs.com/package/mobx-flux)
