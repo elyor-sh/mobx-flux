@@ -19,50 +19,49 @@ import {configureStore} from 'mobx-flux'
 
 export const store = configureStore({...})
 ```
-Wrap to CreateStoreProvider your app
+Register store with createStoreProvider
 
-```jsx
-// ~/main.jsx
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import {CreateStoreProvider} from 'mobx-flux-react'
-import {store} from './store'
+```js
+// ~/main.js
+import { createApp } from "vue";
+import App from "./App.vue";
+import {createStoreProvider} from "mobx-flux-vue";
+import {store} from "./store";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <>
-        <CreateStoreProvider store={store}>
-            <App />
-        </CreateStoreProvider>
-    </>,
-)
+const app = createApp(App)
+
+app.use(createStoreProvider(store))
+
+app.mount('#app')
 ```
 
 Get store or dispatch action
-```jsx
-// ~/App.jsx
-import {useSelector, useDispatch} from 'mobx-flux-react'
-import {observer} from 'mobx-react-lite'
+```vue
+// ~/App.vue
+<script setup>
+import {Observer} from 'mobx-vue-lite'
+import {useSelector, useDispatch} from 'mobx-flux-vue'
 import {increment} from './counterSlice' // Don't forget to create a slice
 
-const App = observer(() => {
-    
-    const dispatch = useDispatch()
-    
-    const {count} = useSelector(state => state.counter)
-    
-    const handleIncrement = () => {
-        dispatch(increment())
-    }
-    
-    return (
-        <>
-            Count: {count}
-            <button onClick={handleIncrement}>Increment</button>
-        </>
-    )
-})
+const dispatch = useDispatch()
 
-export default App
+const counter = useSelector(state => state.counter) // Don't destructure
+
+const handleIncrement = () => {
+  dispatch(increment())
+}
+
+</script>
+
+
+<template>
+    <Observer>
+      <div>
+        Count: {counter.count}
+        <button @click="handleIncrement">Increment</button>
+      </div>
+    </Observer>
+</template>
 ```
 
 ## Usage with Typescript
@@ -73,7 +72,7 @@ Create a store, custom typed hooks
 // ~/store.ts
 
 import {configureStore} from 'mobx-flux'
-import {useDispatch, TypedUseSelectorHook, useSelector } from 'mobx-flux-react'
+import {useDispatch, TypedUseSelectorHook, useSelector } from 'mobx-flux-vue'
 
 export const store = configureStore({...})
 
@@ -91,48 +90,47 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 
 ```
-Wrap to CreateStoreProvider your app
+Register store with createStoreProvider
 
-```tsx
-// ~/main.tsx
-import ReactDOM from 'react-dom/client'
-import App from './App.tsx'
-import {CreateStoreProvider} from 'mobx-flux-react'
-import {store} from './store'
+```ts
+// ~/main.ts
+import { createApp } from "vue";
+import App from "./App.vue";
+import {createStoreProvider} from "mobx-flux-vue";
+import {store} from "./store";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-    <>
-        <CreateStoreProvider store={store}>
-            <App />
-        </CreateStoreProvider>
-    </>,
-)
+const app = createApp(App)
+
+app.use(createStoreProvider(store))
+
+app.mount('#app')
 ```
 
 Get store or dispatch action
-```tsx
-// ~/App.tsx
+```vue
+// ~/App.vue
+<script setup lang="ts">
+import {Observer} from 'mobx-vue-lite'
 import {useAppSelector, useAppDispatch} from './store'
-import {observer} from 'mobx-react-lite'
 import {increment} from './counterSlice' // Don't forget to create a slice
 
-const App = observer(() => {
-    
-    const dispatch = useAppDispatch() // typed dispatch
-    
-    const {count} = useAppSelector(state => state.counter) // typed selector
-    
-    const handleIncrement = () => {
-        dispatch(increment())
-    }
-    
-    return (
-        <>
-            Count: {count}
-            <button onClick={handleIncrement}>Increment</button>
-        </>
-    )
-})
+const dispatch = useAppDispatch()
 
-export default App
+const counter = useAppSelector(state => state.counter) // Don't destructure
+
+const handleIncrement = () => {
+  dispatch(increment())
+}
+
+</script>
+
+
+<template>
+    <Observer>
+      <div>
+        Count: {counter.count}
+        <button @click="handleIncrement">Increment</button>
+      </div>
+    </Observer>
+</template>
 ```
