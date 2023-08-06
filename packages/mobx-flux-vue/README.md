@@ -2,6 +2,9 @@ Official Vue bindings for [mobx-flux](https://www.npmjs.com/package/mobx-flux)
 
 > Note: To work with this package, you need to install this package [mobx-flux](https://www.npmjs.com/package/mobx-flux) 
 
+[Demo](https://mobx-flux-vue.vercel.app)
+[Source code of Demo](https://github.com/elyor-sh/mobx-flux/tree/main/examples/mobx-flux-vue-example)
+
 ## Installation
 
 ```sh

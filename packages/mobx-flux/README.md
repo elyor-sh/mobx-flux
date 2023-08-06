@@ -5,6 +5,7 @@ It's easy to replace the redux-toolkit with this package. There is no extra re-r
 [Bindings for Vue](https://www.npmjs.com/package/mobx-flux-vue).
 
 [Demo App with React](https://mobx-flux-react-demo.vercel.app/).
+[Demo App with Vue](https://mobx-flux-vue.vercel.app).
 
 [Source code of Demo App](https://github.com/elyor-sh/mobx-flux/tree/main/examples/mobx-flux-react-example)
 
