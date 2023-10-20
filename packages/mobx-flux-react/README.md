@@ -94,7 +94,7 @@ export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 
 ```
-Wrap to CreateStoreProvider your app
+Wrap to Provider your app
 
 ```tsx
 // ~/main.tsx
