@@ -22,20 +22,20 @@ import {configureStore} from 'mobx-flux'
 
 export const store = configureStore({...})
 ```
-Wrap to CreateStoreProvider your app
+Wrap to Provider your app
 
 ```jsx
 // ~/main.jsx
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
-import {CreateStoreProvider} from 'mobx-flux-react'
+import {Provider} from 'mobx-flux-react'
 import {store} from './store'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-        <CreateStoreProvider store={store}>
+        <Provider store={store}>
             <App />
-        </CreateStoreProvider>
+        </Provider>
     </>,
 )
 ```
