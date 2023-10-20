@@ -1,6 +1,6 @@
 {
   "name": "mobx-flux-react",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "React hooks and provider for binding mobx-flux to react",
   "main": "./dist/index.js",
   "scripts": {
